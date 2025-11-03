@@ -1,0 +1,25 @@
+/* src/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --geocuba-blue: #0066ff;
+    --geocuba-cyan: #00e5ff;
+    --geocuba-lime: #b4ff39;
+    --dark-900: #0a0a0b;
+    --dark-800: #121212;
+  }
+
+  body {
+    @apply bg-dark-900 text-white;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-gradient-to-r from-geocuba-blue to-geocuba-cyan bg-clip-text text-transparent;
+  }
+}
